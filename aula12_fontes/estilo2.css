@@ -52,31 +52,14 @@ article p {
 
 /* Estilo para as fontes */
 .font-1 {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 20px;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+  font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
 }
 
 .font-2 {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 20px;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-.fonte-3 {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 20px;
-  font-style: normal;
-}
-
-.fonte-4 {
-  font-family: "Playfair Display", serif;
+  font-family: "Edu NSW ACT Cursive", cursive;
   font-optical-sizing: auto;
   font-weight: 20px;
   font-style: normal;
