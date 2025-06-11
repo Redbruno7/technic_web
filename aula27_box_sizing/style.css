@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     /* Garante que todos os elementos usem border-box por padrão */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;       /* Espaçamento entre linhas */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Estilo para container das caixas */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;      /* Espaço entre as caixas */
+}
+
+/* Estilo para as caixas */
+.caixa {
+    width: 45%;
+    padding: 20px;
+    border: 5px solid #333;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: content-box;        /* Usando o box-sizing padrão para a caixa "antes" */
+}
+
+/* Caixa "Antes" */
+.caixa.antes {
+    box-sizing: content-box;        /* Box-sizing padrão, o padding e a borda aumentam o tamanho total */
+}
+
+.caixa.antes p {
+    font-size: 1.1em;
+    color: #888;
+}
+
+/* Caixa "Depois" */
+.caixa.depois {
+    box-sizing: border-box;         /* Box-sizing com border-bos, o padding e a borda não afetam o tamanho total */
+    background-color: #e0f7fa;    /* Cor de fundo diferente para a caixa "depois" */
+}
+
+.caixa.depois p {
+    font-size: 1.1em;
+    color: #00796b;
+}
+
+/* Estilo para o footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #777;
+}

@@ -1,0 +1,41 @@
+/* Definindo estilos gerais para o body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;                      /* Vai ocupar a altura da tela */
+}
+
+/* O container que envolve a imagem */
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;          /* Limita o tamanho máximo do container */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #667;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a imagem responsiva */
+img {
+    max-width: 100%;        /* A imagem não vai ultrapassar a largura do container */
+    height: auto;           /* A altura se ajusta automaticamente para manter a proporção */
+    display: block;         /* Evita que a imagem tenha espaços abaixo */
+    margin: 0 auto;         /* Centraliza a imagem horizontalmente dentro do container */
+}

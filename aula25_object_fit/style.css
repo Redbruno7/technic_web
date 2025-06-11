@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;      /* Utiliza toda a altura da janela */
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;      /* Limita a largura máxima */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #667;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o contêiner da imagem */
+.imga-container {
+    width: 100%;        /* O contêiner da imagem ocupa 100% da largura do contêiner pai */
+    height: 300px;      /* Altura fixa para o contêiner da imagem */
+    overflow: hidden;   /* Oculta qualquer parte da imagem que ultrapasse os limites do contêiner */
+}
+
+img {
+    width: 100%;        /* A imagem vai ocupar 100% da largura do contêiner */
+    height: 300px;      /* A altura da imagem será fixa em 300px */
+    object-fit: cover;  /* Faz com que a imagem preencha o contêiner, cortando onde necessário */
+}
