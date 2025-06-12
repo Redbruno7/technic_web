@@ -5,16 +5,23 @@
     box-sizing: border-box;     /* Inclui padding e borda dentro da largura e altura definidas */
 }
 
+/* Estilo padrão - BODY */
 body {
     line-height: 1.6;               /* Altura da linha */
     background-color: #CED3F2;    /* Cor de fundo */
 }
 
+
+/* Estilo - HEADER */
 header {
-    position: relative;     /* Define o contexto de posicionamento para os elementos filhos */
-    width: 100%;            /* Largura */
-    height: 400px;          /* Altura */
-    overflow: hidden;       /* Esconde o conteúdo que sair do container */
+    position: relative;         /* Define o contexto de posicionamento para os elementos filhos */
+    width: 100%;                /* Largura */
+    height: 400px;              /* Altura */
+    overflow: hidden;           /* Esconde o conteúdo que sair do container */
+    display: flex;              /* Posiciona os elementos em sequência */
+    flex-direction: column;     /* Elementos empilhados verticalmente */
+    align-items: center;        /* Alinha horizontalmente no centro */
+    gap: 30px;                  /* Espaço entre os elementos */
 }
 
 header::before {
@@ -27,20 +34,23 @@ header::before {
     background-image: url(img/img_header.jpg);     /* URL da imagem de fundo */
     background-size: cover;                        /* Cobre todo o container com o conteúdo */
     background-position: center;                   /* Centraliza a imagem */
-    opacity: 0.5;                                  /* Transparência da imagem */
+    opacity: 0.3;                                  /* Transparência da imagem */
     z-index: 0;                                    /* Posiciona atrás dos textos */
 }
 
+
+/* Título */
 header h1 {
     position: relative;                                   /* Permite o funcionamento do z-index */
     font-size: 3rem;                                      /* Tamanho da fonte responsiva */
-    padding: 35px;
+    margin-top: 60px;
     color: #3E4001;                                     /* Cor do título */
     text-align: center;                                   /* Centraliza o texto */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);        /* Sombra do título */
     z-index: 1;                                           /* Posiciona acima da imagem */
 }
 
+/* Subtítulo */
 header p {
     position: relative;
     font-size: 1.5rem;
@@ -48,7 +58,134 @@ header p {
     margin-right: 30px;     /* Margem direita */
     color: #3E4001;
     text-align: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1;
     font-weight: 600;       /* Preenchimento da fonte */
+}
+
+/* Botão */
+header button {
+    position: relative;
+    border-color: #99AFF2;                            /* Cor da borda */
+    font-size: 1.3rem;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 15px;                                /* Arredonda a borda */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;                                    /* Muda o cursor */
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #99AFF2;
+}
+
+header button a {
+    text-decoration: none;      /* Remove sublinhado */
+    font-weight: 600;
+    color: #3E4001;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo - NAV */
+nav {
+    position: fixed;                /* Fixa a posição */
+    top: 0;                         /* Fixa no topo */
+    left: 0;                        /* Fixa na esquerda */
+    width: 100%;
+    background-color: #99AFF2;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+nav a {
+    color: #F2F2F2;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3E4001;
+}
+
+.nav-lista {
+    list-style-type: none;      /* Retira marcador da lista */
+    display: flex;              /* Posicionamento contínuo */
+    justify-content: center;    /* Centraliza o navegador */
+}
+
+/* Section 1 - SERVICOS - INDEX */
+#servicos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #99AFF2;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#servicos h2 {
+    width: 100%;
+    color: #3E4001;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);   
+}
+
+.servico {
+    width: 30%;
+    background-color: #CED3F2;
+    color: #3E4001;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.servico img {
+    width: 100%;
+    height: auto;
+}
+
+.servico p {
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Section 2 - PROJETOS-INDEX */
+#projetos-index {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #99AFF2;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#projetos-index h2 {
+    width: 100%;
+    color: #3E4001;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
