@@ -277,7 +277,7 @@ footer {
     color: #3E4001;
 }
 
-/* Página Sobre Nós - */
+/* Página - Sobre Nós*/
 #sobre {
     position: relative;
     display: flex;
@@ -461,4 +461,63 @@ footer {
 .cliente h2 {
     font-size: 1.3rem;
     margin: 0;
+}
+
+/* Página - Contato */
+
+#contato-corpo {
+  max-width: 600px;
+  margin: 60px auto 0 auto;
+  padding: 30px;
+  background-color: #99AFF2;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3E4001;
+}
+
+#contato-corpo h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#contato-corpo p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #CED3F2;
+  color: #3E4001;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #F2F2F2;
 }
