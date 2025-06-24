@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Para estilos do corpo da página, utiliza-se flixbox com direção em coluna para garantir o preenchimento de toda a altura da viewport */
+body {
+    display: flex;          /* Ativa o flexbox */
+    min-height: 100vh;      /* 100% da altura da viewport */
+    flex-direction: column; /* Organiza os filhos verticalmente */
+    margin: 0;              /* Remove margens padrão */
+}
+
+main {
+    display: flex;  /* Ativa flexbox para os filhos diretos */
+    flex: 1;        /* Cresce para ocupar todo o espaço vertical disponível */
+}
+
+main > article {
+    flex: 1;    /* Ocupa todo o espaço disponível */
+    order: 1;   /* Ordem de exibição (1º lugar) */
+}
+
+main > nav,
+main > aside {
+    flex: 0 0 20vw; /* Largura fixa de 20% da viewport */
+}
+
+main > nav {
+    background: #d7e8d4;    /* Cor de fundo verde claro */
+    order: 3;                 /* Ordem de exibição (3º lugar) */
+}
+
+main > aside {
+    background-color: beige;    /* Cor de fundo bege */
+    order: 2;                     /* Ordem de exibição (2º lugar) */
+}
+
+header, 
+footer {
+    background: rgb(242, 116, 6);   /* Cor de fundo verde-amarelado */
+    height: 20vh;                     /* Altura de 20% da viewport */
+}
+
+header, 
+footer, 
+article, 
+nav, 
+aside {
+    padding: 1em;   /* Espaçamento interno de 1 unidade relativa ao tamanho da fonte */
+}
+
+/* Unidades de medidas utilizadas:
+* vh (viewport height): relativa à altura da viewport
+* vw (viewport width): relativa à largura da viewport
+* em: relativa ao tamanho da fonte do elemento pai
