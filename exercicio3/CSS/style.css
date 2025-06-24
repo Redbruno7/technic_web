@@ -1,0 +1,253 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Menu de Navegação */
+#topo {
+    background-color: #ffb347;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 60px;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    background-color: #ffd580;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    padding: 20px;
+}
+
+/* Seção - Nossos Serviços */
+.destaques h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.cards img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.cards p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Agrupar imagem e legenda */
+.cards img+p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Seção - Tabela de preços */
+.tabela-servicos {
+    margin-top: 40px;
+}
+
+.tabela-servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f9d8a6;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #fff8ee;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: #ffb347;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #topo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards img {
+        width: 90%;
+    }
+
+    nav ul.menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Página - Produtos */
+.cards article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.cards article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Página - Sobre */
+.conteudo section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conteudo section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Página - Contato */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff8ee;
+}
+
+.formulario label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario button {
+    background-color: #ffb347;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #ffd580;
+}
+
+/* Contatos adicionais */
+.conteudo h3 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.conteudo section p {
+    text-align: center;
+}
