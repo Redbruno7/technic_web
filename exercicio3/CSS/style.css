@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfdfd;
-    color: #333;
+    background-color: #F2F2F2;
+    color: #59381C;
 }
 
 /* Menu de Navegação */
 #topo {
-    background-color: #ffb347;
+    background-color: #F2CEA2;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@ nav ul.menu {
 
 nav ul.menu li a {
     text-decoration: none;
-    color: #333;
+    color: #59381C;
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 8px;
@@ -41,7 +41,7 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-    background-color: #ffd580;
+    background-color: #D9A86C;
 }
 
 /* Banner */
@@ -50,6 +50,7 @@ nav ul.menu li a:hover {
     height: auto;
     display: block;
     margin-bottom: 30px;
+    top: 0;
 }
 
 /* Conteúdo principal */
@@ -76,9 +77,9 @@ nav ul.menu li a:hover {
     width: 200px;
     height: auto;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #59381C;
     padding: 8px;
-    background-color: #fff;
+    background-color: #f2cea25b;
 }
 
 .cards p {
@@ -113,26 +114,25 @@ table {
 
 table th,
 table td {
-    border: 1px solid #ccc;
+    border: 1px solid #59381C;
     padding: 12px;
     text-align: center;
 }
 
 table th {
-    background-color: #f9d8a6;
+    background-color: #F2CEA2;
     font-weight: bold;
 }
 
 table tr:nth-child(even) {
-    background-color: #fff8ee;
+    background-color: #f2cea25b;
 }
 
 /* Rodapé */
 #rodape {
-    background-color: #ffb347;
+    background-color: #f2cea25b;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
     font-size: 1rem;
 }
 
@@ -204,9 +204,9 @@ table tr:nth-child(even) {
     max-width: 500px;
     margin: 0 auto 30px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #59381C;
     border-radius: 10px;
-    background-color: #fff8ee;
+    background-color: #f2cea25b;
 }
 
 .formulario label {
@@ -220,13 +220,13 @@ table tr:nth-child(even) {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #59381C;
     border-radius: 5px;
     font-size: 1rem;
 }
 
 .formulario button {
-    background-color: #ffb347;
+    background-color: #D9A86C;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -237,7 +237,7 @@ table tr:nth-child(even) {
 }
 
 .formulario button:hover {
-    background-color: #ffd580;
+    background-color: #F2CEA2;
 }
 
 /* Contatos adicionais */
