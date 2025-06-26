@@ -33,7 +33,7 @@ nav ul.menu {
 
 nav ul.menu li a {
     text-decoration: none;
-    color: #59381C;
+    color: #59381c;
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 8px;
@@ -58,28 +58,46 @@ nav ul.menu li a:hover {
     padding: 20px;
 }
 
-/* Seção - Nossos Serviços */
+.destaques {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Seção - Produtos */
 .destaques h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
+    width: 100%;
 }
 
 .cards {
+    width: 31%;
+    background-color: #59381C;
+    color: #F2F2F2;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: scale 0.3 ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cards:hover {
+    color: #D9A86C;
+    scale: 1.05;
 }
 
 .cards img {
-    width: 200px;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    border: 1px solid #59381C;
-    padding: 8px;
-    background-color: #f2cea25b;
 }
 
 .cards p {
@@ -145,12 +163,9 @@ table tr:nth-child(even) {
     }
 
     .cards {
+        width: 100%;
         flex-direction: column;
         align-items: center;
-    }
-
-    .cards img {
-        width: 90%;
     }
 
     nav ul.menu {
